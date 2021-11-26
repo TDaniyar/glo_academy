@@ -16,3 +16,4 @@ const rollback = 56;
 const fullPrice = 555666;
 let adaptive = 'name';
 let newVarFor = 'this is just empty str';
+// new comment for mentor check
