@@ -21,6 +21,8 @@ while (num > 1) {
 }
 console.log(mult);
 
+
+
 let multPow = mult ** 3;
 console.log(multPow);
 console.log(String(multPow).slice(0, 2));
