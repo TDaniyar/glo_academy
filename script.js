@@ -1,18 +1,24 @@
+'use strict';
 
-alert('Hello new js world');
-console.log("New JS student");
+let title = prompt('Как называется ваш проект?');
+let screens = prompt('Какие типы экранов нужно разработать?');
+let screenPrice = prompt('Сколько будет стоить данная работа?');
+let adaptive = confirm('Нужен ли адаптив на сайте?');
 
+let service1 = prompt('Какой дополнительный тип услуги нужен?');
+let servicePrice1 = prompt("Сколько это будет стоить?");
 
-var newVar = 10;
-let newSecondVar = "Var";
-const thisNewConstant = 10;
+let service2 = prompt('Какой дополнительный тип услуги нужен?');
+let servicePrice2 = prompt("Сколько это будет стоить?");
 
-console.log(newSecondVar);
+let fullPrice = screenPrice+servicePrice1+servicePrice2
+let otkat = fullPrice*0.01;
+let servicePercentPrice = fullPrice -otkat;
 
-let title = "New var";
-let screens = 10;
-let screenPrice = 'Goga';
-const rollback = 56;
-const fullPrice = 555666;
-let adaptive = 'name';
-let newVarFor = 'this is just empty str';
+if (fullPrice > 30000) {
+    console.log("Даем скидку в 10%");
+} else if (fullPrice > 15000 && fullPrice < 30000) {
+    console.log("Даем скидку в 5%");
+} else if (fullPrice < 15000 && fullPrice > 0) {
+    console.log("Скидка не предусмотрена");
+} else console.log("Что то пошло не так");
