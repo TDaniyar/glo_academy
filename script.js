@@ -17,8 +17,8 @@ let servicePercentPrice = fullPrice - otkat;
 console.log(Math.ceil(servicePercentPrice));
 if (fullPrice > 30000) {
     console.log("Даем скидку в 10%");
-} else if (fullPrice > 15000 && fullPrice < 30000) {
+} else if (fullPrice >= 15000 && fullPrice < 30000) {
     console.log("Даем скидку в 5%");
-} else if (fullPrice < 15000 && fullPrice > 0) {
+} else if (fullPrice <= 15000 && fullPrice > 0) {
     console.log("Скидка не предусмотрена");
 } else console.log("Что то пошло не так");
