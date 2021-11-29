@@ -1,12 +1,5 @@
 'use strict';
 
-/*
-9) Объявить переменную servicePercentPrice и занести в нее 
-итоговую стоимость за вычетом отката посреднику 
-(servicePercentPrice = fullPrice - Откат посреднику), 
-округлив результат в большую сторону (методы объекта Math в помощь). 
-Вывести servicePercentPrice в консоль.
-*/
 let title = prompt('Как называется ваш проект?');
 let screens = prompt('Какие типы экранов нужно разработать?');
 let screenPrice = +prompt('Сколько будет стоить данная работа?');
