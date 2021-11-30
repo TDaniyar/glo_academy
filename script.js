@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 // 1) Следующим переменным присвоить значения
 
 let title = 'Домашнее задание'; //- строка с названием проекта,
@@ -26,6 +27,33 @@ console.log(fullPrice * (rollback / 100));
 Привести строку screens к нижнему регистру и разбить строку на массив, вывести массив в консоль
 Вывести в консоль Процент отката посреднику за работу (fullPrice * (rollback/100))
 */
+=======
+'use strict';
 
+let title = prompt('Как называется ваш проект?');
+let screens = prompt('Какие типы экранов нужно разработать?');
+let screenPrice = +prompt('Сколько будет стоить данная работа?');
+let adaptive = confirm('Нужен ли адаптив на сайте?');
+>>>>>>> lesson03
 
+let service1 = prompt('Какой дополнительный тип услуги нужен?');
+let servicePrice1 = +prompt("Сколько это будет стоить?");
+
+<<<<<<< HEAD
 //3) Проверить, чтобы все работало и не было ошибок в консоли 4) Добавить папку или ветку со вторым уроком в свой репозиторий на GitHub
+=======
+let service2 = prompt('Какой дополнительный тип услуги нужен?');
+let servicePrice2 = +prompt("Сколько это будет стоить?");
+
+let fullPrice = screenPrice+servicePrice1+servicePrice2
+let otkat = fullPrice*0.1;
+let servicePercentPrice = fullPrice - otkat;
+console.log(Math.ceil(servicePercentPrice));
+if (fullPrice > 30000) {
+    console.log("Даем скидку в 10%");
+} else if (fullPrice >= 15000 && fullPrice < 30000) {
+    console.log("Даем скидку в 5%");
+} else if (fullPrice <= 15000 && fullPrice > 0) {
+    console.log("Скидка не предусмотрена");
+} else console.log("Что то пошло не так");
+>>>>>>> lesson03
