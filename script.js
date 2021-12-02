@@ -14,7 +14,7 @@ let service1
 let service2
 
 const isNumber = function(num) {
-    return !isNaN(parseFloat(num)) && isFinite(num) && num ===0
+    return !isNaN(parseFloat(num)) && isFinite(num)
 }
 
 const asking = function() {
@@ -23,7 +23,7 @@ const asking = function() {
     do {
     screenPrice = +prompt('Сколько будет стоить данная работа?')
     }
-    while (!isNumber(screenPrice))
+    while (!isNumber(screenPrice) || screenPrice == 0)
 
     adaptive = confirm('Нужен ли адаптив на сайте?')
     screensNew = screens.toLowerCase()
