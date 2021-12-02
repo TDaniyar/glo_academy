@@ -14,15 +14,14 @@ let service1
 let service2
 
 const isNumber = function(num) {
-    return !isNaN(parseFloat(num)) && isFinite(num)
+    return !isNaN(parseFloat(num)) && isFinite(num) && num ===0
 }
 
-const asking = function(){
+const asking = function() {
     title = prompt('Как называется ваш проект?', "Калькулятор верстки")
     screens = prompt('Какие типы экранов нужно разработать?', "Простые, Сложные")
-    screenPrice = prompt('Сколько будет стоить данная работа?')
     do {
-        screenPrice = prompt('Сколько будет стоить данная работа?')
+    screenPrice = +prompt('Сколько будет стоить данная работа?')
     }
     while (!isNumber(screenPrice))
 
@@ -40,7 +39,7 @@ const getAllServicePrices = function() {
         }
         sum += +prompt("Сколько это будет стоить?")
         while (!isNumber(sum)){
-            sum = prompt("Сколько это будет стоить?")
+            sum = +prompt("Сколько это будет стоить?")
         }
     }
     return sum
@@ -50,22 +49,17 @@ const showTypeOf = function(variable){
     console.log(variable, typeof variable);
 }
 
-
-
 function getFullPrice () {
     return screenPrice + allServicePrices
 }
-
 
 function getRollback () {
     return fullPrice*0.1
 }
 
-
 const getServicePercentPrices = function(){
     return fullPrice - rollback
 }
-
 
 function getRollbackMessage(price) {
     if (price > 30000) {
@@ -104,3 +98,4 @@ console.log(screensNew.split(" "));
 console.log(fullPrice * (rollback / 100));
 console.log(getRollbackMessage(fullPrice));
 console.log(getServicePercentPrices());
+
