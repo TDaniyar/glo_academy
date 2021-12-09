@@ -39,16 +39,8 @@ chapter6.append(chapter68);
 const chapter61 = sequence[2].querySelectorAll('li');
 chapter61[8].after(chapter61[10]);
 
-//   background-image: url(./image/open_book.jpg);
-const image = document.querySelector('[open_book.jpg]');
-console.log(image);
 
-/*
-Используя только файл скрипта выполнить такие действия:
-Восстановить порядок книг.
-Заменить картинку заднего фона на другую из папки image
-Исправить заголовок в книге 3( Получится - "Книга 3. this и Прототипы Объектов")
-Удалить рекламу со страницы
-Восстановить порядок глав во второй и пятой книге (внимательно инспектируйте индексы элементов, поможет dev tools)
-в шестой книге добавить главу “Глава 8: За пределами ES6” и поставить её в правильное место
-*/
+
+//   background-image: url(./image/open_book.jpg);
+const image = document.getElementById('background-image');
+console.log(image);
